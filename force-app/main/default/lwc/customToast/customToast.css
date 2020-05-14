@@ -1,0 +1,11 @@
+.toast-container {
+    height: 2rem;
+}
+
+.message-control {
+    font-size: 1em;
+}
+
+.notify_toast-custom {
+    border-radius: 1em;
+}

@@ -1,0 +1,21 @@
+<template>
+    <div data-id="toastCustom" class="slds-show">
+        <div class="slds-notify_container slds-is-relative">
+            <div class={mainClass} role="status">
+                <span class="slds-assistive-text">{variant}</span>
+                <span class={messageClass} title={title}>
+                    <lightning-icon icon-name={iconName} size="small" variant="inverse"></lightning-icon>
+                </span>
+                <div class="slds-notify__content">
+                    <h2 class="slds-text-heading_small message-control">{message}</h2>
+                </div>
+                <div class="slds-notify__close">
+                    <button class="slds-button slds-button_icon slds-button_icon-inverse" title="Close" onclick={close}>
+                        <lightning-icon icon-name="utility:close" size="small" variant="inverse"> </lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
